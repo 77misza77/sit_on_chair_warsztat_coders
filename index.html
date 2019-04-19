@@ -5,9 +5,140 @@
     <title>SitOnChair</title>
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!--reset-->
+    <link rel="stylesheet" href="normalise.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,900&amp;subset=latin-ext" rel="stylesheet">
+<!--ikony z font awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
 </head>
 <body>
 
+<header class="page_header">
+<!--   robimy container -->
+    <div class="container">
+<!--        ma byc h1 w dokumnecie po bozemu-->
+<!--        pod logo-->
+<!--        ma byc porzadek-->
+        <h1 class="page-logo">
+
+        <a href="/" class="page-logo-link">
+            Sit <span>On</span> Chair
+<!--       span do kolorowania srodkowej literki-->
+        </a></h1>
+        <nav class="page-nav">
+            <ul class="page-nav-list">
+                <li class="page-nav-list-el">
+                    <a href="" class="page-nav-list-link">O firmie</a>
+<!--                    robimy dropdown-->
+                    <ul class="page-nav-dropdown">
+                        <li class="page-nav-dropdown-el">
+                            <a href="" class="page-nav-dropdown-link">Aktualności</a>
+                        </li>
+                        <li class="page-nav-dropdown-el">
+                            <a href="" class="page-nav-dropdown-link">Nasz team</a>
+                        </li>
+                        <li class="page-nav-dropdown-el">
+                            <a href="" class="page-nav-dropdown-link">Historia</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="page-nav-list-el">
+                    <a href="" class="page-nav-list-link">Galeria</a>
+                </li>
+                <li class="page-nav-list-el">
+                    <a href="" class="page-nav-list-link">Kontakt</a>
+                </li>
+            </ul>
+        </nav>
+
+    </div>
+</header>
+
+<!--slider-->
+<section class="slider-bg">
+    <div class="container">
+
+        <div class="slider">
+<!--            przycisk slidera kodem, one sa po bokach zdjec-->
+            <button type="button" class="slider-prev">
+<!--                &lt;-->
+                <i class="fas fa-angle-left"></i>
+            </button>
+
+            <button type="button" class="slider-next">
+<!--                &gt; link zamaist kodu-->
+                <i class="fas fa-angle-right"></i>
+            </button>
+<!--            srodkowy kontener na zdjecia-->
+        <div class="slider-slide-container">
+            <div class="slider-slide slider-slide-active"></div>
+            <div class="slider-slide "></div>
+            <div class="slider-slide "></div>
+            <div class="slider-slide "></div>
+        </div>
+
+
+
+        </div>
+
+
+
+    </div>
+</section>
+
+<!--form-->
+<section class="main-contact">
+    <div class="container">
+        <h2 class="section-title">
+            Kontakty</h2>
+
+        <form class="form" action="">
+<!--            action gdzie dana wyslane-->
+            <div class="form-left">
+                <div class="form-row">
+<!--                    robimy labela bo porzadek-->
+                    <label for="name" class="visuallyhidden">Imię</label>
+                    <input class="form-input" type="text" id="name" name="name" placeholder="Imię">
+                </div>
+                <div class="form-row">
+                    <!--                    robimy labela bo porzadek-->
+                    <label for="email" class="visuallyhidden">E-mail</label>
+                    <input class="form-input" type="email" id="name" name="name" placeholder="e-mail">
+<!--                placeholder to bajer, label jest czytny przez urzadznia-->
+                </div>
+                <div class="form-row">
+<!--                    ukrywamy labele przez visually hiden-->
+                    <label for="message" class="visuallyhidden">Wiadomość</label>
+                    <textarea class="form-input" name="message" id="message" placeholder="Wiadomość"></textarea>
+<!--                    przycisk testowo <button type="submit">Wyślij</button>-->
+<!--required patten htmlowe walidacje:)),-->
+                </div>
+            </div>
+
+            <div class="form-right">
+
+                <div class="form-img"></div>
+
+                <label class="form-checkbox">
+<!--                    nie dawac checked bo paka !!!!-->
+                    <input type="checkbox" name="regulation">
+                    Zgadzam sie na przetwarzanie moich danych osobowych.
+                </label>
+
+                <button type="submit" class="btn-form-submit btn">
+                    Wyslij
+                </button>
+
+
+
+            </div>
+        </form>
+
+
+    </div>
+</section>
 
 </body>
 </html>
